@@ -314,6 +314,7 @@ Citation
    contributing.rst
    deep_dive.rst
    faq.rst
+   glossary.rst
 
 
 .. toctree::
@@ -329,16 +330,25 @@ Citation
 .. toctree::
    :hidden:
    :maxdepth: -1
-   :caption: Classes
+   :caption: Data Classes
 
-   stateful/activations.rst
+   data_classes/container.rst
+   data_classes/array.rst
+
+
+.. toctree::
+   :hidden:
+   :maxdepth: -1
+   :caption: Framework Classes
+
    stateful/converters.rst
+   stateful/sequential.rst
    stateful/initializers.rst
    stateful/layers.rst
-   stateful/module.rst
    stateful/norms.rst
    stateful/optimizers.rst
-   stateful/sequential.rst
+   stateful/module.rst
+   stateful/activations.rst
 
 
 .. toctree::

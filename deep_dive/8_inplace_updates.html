@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inplace Updates &mdash; Ivy 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="icon" type="image/png" href="https://github.com/unifyai/unifyai.github.io/blob/master/img/externally_linked/ivy_logo_only.png?raw=true">
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -20,7 +21,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Function Arguments" href="9_function_arguments.html" />
+    <link rel="next" title="Formatting" href="9_formatting.html" />
     <link rel="prev" title="Devices" href="7_devices.html" /> 
 </head>
 
@@ -60,18 +61,22 @@
 <li class="toctree-l3"><a class="reference internal" href="#copy-argument">copy argument</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="9_function_arguments.html">Function Arguments</a></li>
-<li class="toctree-l2"><a class="reference internal" href="10_docstrings.html">Docstrings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="11_docstring_examples.html">Docstring Examples</a></li>
-<li class="toctree-l2"><a class="reference internal" href="12_array_api_tests.html">Array API Tests</a></li>
-<li class="toctree-l2"><a class="reference internal" href="13_ivy_tests.html">Ivy Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="9_formatting.html">Formatting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="10_function_arguments.html">Function Arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="11_submodule_helpers.html">Submodule Helper Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="12_docstrings.html">Docstrings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="13_docstring_examples.html">Docstring Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="14_array_api_tests.html">Array API Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="15_ivy_tests.html">Ivy Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="16_ivy_frontends.html">Ivy Frontends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="17_ivy_frontends_tests.html">Ivy Frontend Tests</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Functions</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../functional/frontends.html">Frontends</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/activations.html">Activations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/compilation.html">Compilation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/constants.html">Constants</a></li>
@@ -81,7 +86,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/elementwise.html">Elementwise</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/general.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/gradients.html">Gradients</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functional/ivy/image.html">Image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/layers.html">Layers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/linear_algebra.html">Linear algebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/losses.html">Losses</a></li>
@@ -96,16 +100,21 @@
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/statistical.html">Statistical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../functional/ivy/utility.html">Utility</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Classes</span></p>
+<p class="caption" role="heading"><span class="caption-text">Data Classes</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../stateful/activations.html">Activations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_classes/container.html">Container</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_classes/array.html">Array</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Framework Classes</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/converters.html">Converters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stateful/sequential.html">Sequential</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/initializers.html">Initializers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/layers.html">Layers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../stateful/module.html">Module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/norms.html">Norms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../stateful/optimizers.html">Optimizers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../stateful/sequential.html">Sequential</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stateful/module.html">Module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../stateful/activations.html">Activations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Docs</span></p>
 <ul>
@@ -281,7 +290,7 @@ This could for example be the input array itself, but can also be any other arra
 The type hint of the <code class="code docutils literal notranslate"><span class="pre">out</span></code> argument is <code class="code docutils literal notranslate"><span class="pre">Optional[ivy.Array]</span></code>.
 However, as discussed above, if the function is <em>nestable</em> then <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> instances are also supported.
 <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> is omitted from the type hint in such cases,
-as explained in the <a class="reference internal" href="9_function_arguments.html#function-arguments"><span class="std std-ref">Function Arguments</span></a> section.</p>
+as explained in the <a class="reference internal" href="10_function_arguments.html#function-arguments"><span class="std std-ref">Function Arguments</span></a> section.</p>
 <p>When the <code class="code docutils literal notranslate"><span class="pre">out</span></code> argument is unspecified, then the return is simply provided in a newly created <code class="code docutils literal notranslate"><span class="pre">ivy.Array</span></code>
 (or <code class="code docutils literal notranslate"><span class="pre">ivy.Container</span></code> if <em>nestable</em>).
 However, when <code class="code docutils literal notranslate"><span class="pre">out</span></code> is specified, then the return is provided as an inplace update of the
@@ -388,6 +397,30 @@ like <a class="reference external" href="https://github.com/unifyai/ivy/blob/204
 <a class="reference external" href="https://github.com/unifyai/ivy/blob/2045db570d7977830681a7498a3c1045fb5bcc79/ivy/func_wrapper.py#L361">handle_out_argument</a>
 wrapping, but we opt to implement this in the compositional function itself,
 due to point 1 mentioned above.</p>
+<p><strong>Mixed Functions</strong></p>
+<p>As explained in the <a class="reference internal" href="1_function_types.html#function-types"><span class="std std-ref">Function Types</span></a> section, <em>mixed</em> functions can effectively
+behave as either compositional or primary functions, depending on the backend
+that is selected.</p>
+<p>Unlike <em>compositional</em> arguments, where the <code class="code docutils literal notranslate"><span class="pre">handle_out_argument</span></code> decorator is not
+included, this decorator <em>should</em> be included for <em>mixed</em> functions. This decorator is
+needed in order to ensure the <code class="code docutils literal notranslate"><span class="pre">out</span></code> argument is handled correctly when the backend
+<em>does</em> include a backend-specific implementation, which itself may or may not handle the
+<code class="code docutils literal notranslate"><span class="pre">out</span></code> argument explicitly. In such cases, the <em>mixed</em> function behaves like a
+<em>primary</em> function. If the backend-specific implementation does not handle the
+<code class="code docutils literal notranslate"><span class="pre">out</span></code> argument explicitly (there is no attribute <code class="code docutils literal notranslate"><span class="pre">support_native_out</span></code>
+specified on the backend function), then it will need to be handled <a class="reference external" href="https://github.com/unifyai/ivy/blob/588618fe04de21f79d68a8f6cbb48ab3402c6905/ivy/func_wrapper.py#L287">in the decorator</a>.</p>
+<p>However, the inclusion of this decorator means that in cases where the <em>mixed</em> function
+is called compositionally (there is no backend implementation), then the <code class="code docutils literal notranslate"><span class="pre">out</span></code>
+argument will also be handled <a class="reference external" href="https://github.com/unifyai/ivy/blob/588618fe04de21f79d68a8f6cbb48ab3402c6905/ivy/func_wrapper.py#L287">in the decorator</a>, this time because of the lack of the
+<code class="code docutils literal notranslate"><span class="pre">support_native_out</span></code> attribute found on the compositional implementation. But this
+is not ideal. All compositional implementations are fully capable of handling the
+<code class="code docutils literal notranslate"><span class="pre">out</span></code> argument explicitly, and so handling it <a class="reference external" href="https://github.com/unifyai/ivy/blob/588618fe04de21f79d68a8f6cbb48ab3402c6905/ivy/func_wrapper.py#L287">in the decorator</a> will likely be
+less efficient, and prevent us from leveraging backend-specific in-place optimizations
+where they might exist when calling the individual Ivy functions of the compositional
+implementation.</p>
+<p>Therefore, we always add the <code class="code docutils literal notranslate"><span class="pre">support_native_out</span></code> attribute to <em>mixed</em> functions,
+to ensure that the <code class="code docutils literal notranslate"><span class="pre">out</span></code> argument is always handled directly by the compositional
+implementation, rather than being handled <a class="reference external" href="https://github.com/unifyai/ivy/blob/588618fe04de21f79d68a8f6cbb48ab3402c6905/ivy/func_wrapper.py#L287">in the decorator</a>.</p>
 </section>
 <section id="copy-argument">
 <h2>copy argument<a class="headerlink" href="#copy-argument" title="Permalink to this heading"></a></h2>
@@ -419,13 +452,13 @@ or reach out on <a class="reference external" href="https://discord.gg/ZVQdvbzNQ
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="7_devices.html" class="btn btn-neutral float-left" title="Devices" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="9_function_arguments.html" class="btn btn-neutral float-right" title="Function Arguments" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="9_formatting.html" class="btn btn-neutral float-right" title="Formatting" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2020, Ivy Team.</p>
+    <p>&#169; Copyright 2020-2022, Ivy Team.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
